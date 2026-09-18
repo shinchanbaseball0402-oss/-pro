@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>坂本隆一 Ryuichi Sakamoto | プロゴルファー公式サイト</title>
+<meta name="description" content="プロゴルファー坂本隆一(Ryuichi Sakamoto)の公式サイト。プロフィール、戦績、ランキング推移、スケジュール、スポンサー企業情報を掲載。">
+<meta name="keywords" content="坂本隆一,Ryuichi Sakamoto,プロゴルファー,JGTO,PGA,ゴルフ">
+<link rel="canonical" href="https://www.sakamoto-ryuichi-golf.jp/">
+
+<!-- OGP -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="坂本隆一 Ryuichi Sakamoto | プロゴルファー公式サイト">
+<meta property="og:description" content="プロゴルファー坂本隆一の公式サイト。実績・ランキング・スケジュール・スポンサー情報を掲載。">
+<meta property="og:url" content="https://www.sakamoto-ryuichi-golf.jp/">
+<meta property="og:image" content="https://www.sakamoto-ryuichi-golf.jp/images/ogp.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "坂本隆一",
+  "alternateName": "Ryuichi Sakamoto",
+  "jobTitle": "プロゴルファー",
+  "url": "https://www.sakamoto-ryuichi-golf.jp/",
+  "image": "https://www.sakamoto-ryuichi-golf.jp/images/portrait.jpg",
+  "birthDate": "1996-05-14",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "宮崎県宮崎市"
+  },
+  "nationality": "日本",
+  "memberOf": [
+    {
+      "@type": "SportsOrganization",
+      "name": "日本プロゴルフ協会(PGA)"
+    },
+    {
+      "@type": "SportsOrganization",
+      "name": "日本ゴルフツアー機構(JGTO)"
+    }
+  ],
+  "sponsor": [
+    { "@type": "Organization", "name": "TAKUMI Corporation" },
+    { "@type": "Organization", "name": "GREEN FIELD 生命保険" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a href="#main" class="skip-link">本文へスキップ</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-en">R. SAKAMOTO</span>
+      <span class="logo-jp">坂本隆一 公式サイト</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="メニューを開閉する">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="サイト内メニュー">
+      <ul>
+        <li><a href="#profile">PROFILE<span>プロフィール</span></a></li>
+        <li><a href="#history">CAREER<span>経歴</span></a></li>
+        <li><a href="#qualification">TOUR<span>資格・ツアー</span></a></li>
+        <li><a href="#ranking">RANKING<span>ランキング</span></a></li>
+        <li><a href="#scores">SCORES<span>スコア</span></a></li>
+        <li><a href="#sponsors">SPONSORS<span>スポンサー</span></a></li>
+        <li><a href="#agency">AGENCY<span>所属先</span></a></li>
+        <li><a href="#news">NEWS<span>ニュース</span></a></li>
+        <li><a href="#contact">CONTACT<span>お問い合わせ</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO / TOP ============ -->
+  <section class="hero" id="top">
+    <div class="hero-media">
+      <img src="images/hero-swing.jpg" alt="坂本隆一選手のティーショットのスイング写真" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">PGA MEMBER PRO / JGTO TOUR PLAYER</p>
+      <h1 class="hero-title">
+        <span class="en">SWING FOR THE NEXT GREEN.</span>
+        <span class="jp">次のグリーンへ、まっすぐに。</span>
+      </h1>
+      <p class="hero-name">坂本隆一 <span>Ryuichi Sakamoto</span></p>
+      <a href="#profile" class="btn btn-outline">PROFILEを見る</a>
+    </div>
+  </section>
+
+  <!-- ニュース速報帯 -->
+  <div class="news-ticker" aria-label="最新ニュース">
+    <span class="ticker-label">NEWS</span>
+    <div class="ticker-track" id="tickerTrack"></div>
+  </div>
+
+  <!-- 次戦・直近成績 -->
+  <section class="quick-info">
+    <div class="container quick-info-grid">
+      <div class="quick-card" id="nextMatchCard">
+        <h2 class="quick-card-title">NEXT MATCH<span>次戦情報</span></h2>
+        <div class="quick-card-body" id="nextMatchBody">Loading...</div>
+      </div>
+      <div class="quick-card" id="recentResultCard">
+        <h2 class="quick-card-title">RECENT RESULT<span>直近成績</span></h2>
+        <div class="quick-card-body" id="recentResultBody">Loading...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- スポンサーロゴ帯 -->
+  <section class="sponsor-strip" aria-label="スポンサー企業">
+    <div class="container">
+      <p class="sponsor-strip-label">SPONSORS</p>
+      <div class="sponsor-strip-logos" id="sponsorStrip"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROFILE ============ -->
+  <section class="section" id="profile">
+    <div class="container">
+      <h2 class="section-title"><span class="en">PROFILE</span><span class="jp">プロフィール</span></h2>
+      <div class="profile-grid">
+        <div class="profile-photo">
+          <img src="images/portrait.jpg" alt="坂本隆一選手のポートレート写真" loading="lazy">
+        </div>
+        <div class="profile-body">
+          <table class="profile-table">
+            <tbody>
+              <tr><th>氏名</th><td>坂本隆一(さかもと りゅういち)/ Ryuichi Sakamoto</td></tr>
+              <tr><th>生年月日</th><td>1996年5月14日</td></tr>
+              <tr><th>出身地</th><td>宮崎県宮崎市</td></tr>
+              <tr><th>身長・体重</th><td>178cm / 76kg</td></tr>
+              <tr><th>血液型</th><td>O型</td></tr>
+              <tr><th>資格</th><td>PGA(日本プロゴルフ協会)会員プロ / JGTOツアープレーヤー</td></tr>
+              <tr><th>所属</th><td>株式会社TAKUMIスポーツマネジメント</td></tr>
+              <tr><th>使用クラブ</th><td>TAKUMI PRO-V ドライバー / アイアンセット一式</td></tr>
+              <tr><th>使用ボール</th><td>GREEN FIELD TOUR X</td></tr>
+            </tbody>
+          </table>
+          <div class="profile-text">
+            <h3>ゴルフを始めたきっかけ</h3>
+            <p>幼少期、祖父に連れられて訪れた練習場で初めてクラブを握ったのが原点。ボールがまっすぐ飛んだ瞬間の感覚が忘れられず、小学3年生から本格的に競技を始める。</p>
+            <h3>プレースタイル</h3>
+            <p>正確なアイアンショットとグリーン上の集中力を武器にする、堅実かつ勝負強いプレースタイル。大叩きをしない安定感に定評がある。</p>
+            <h3>座右の銘</h3>
+            <p class="motto">「一打一打に、誠実であれ」</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HISTORY ============ -->
+  <section class="section section-alt" id="history">
+    <div class="container">
+      <h2 class="section-title"><span class="en">CAREER</span><span class="jp">経歴</span></h2>
+      <ol class="timeline" id="timelineList"></ol>
+    </div>
+  </section>
+
+  <!-- ============ QUALIFICATION / TOUR ============ -->
+  <section class="section" id="qualification">
+    <div class="container">
+      <h2 class="section-title"><span class="en">TOUR STATUS</span><span class="jp">資格・ツアー情報</span></h2>
+      <div class="qual-grid">
+        <div class="qual-card">
+          <p class="qual-num">2018年</p>
+          <p class="qual-label">PGA資格取得年</p>
+        </div>
+        <div class="qual-card">
+          <p class="qual-num">18試合</p>
+          <p class="qual-label">2026シーズン出場数</p>
+        </div>
+        <div class="qual-card">
+          <p class="qual-num">シード権保持</p>
+          <p class="qual-label">賞金ランキング上位65位以内</p>
+        </div>
+        <div class="qual-card">
+          <p class="qual-num">JGTO正会員</p>
+          <p class="qual-label">日本ゴルフツアー機構</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RANKING ============ -->
+  <section class="section section-alt" id="ranking">
+    <div class="container">
+      <h2 class="section-title"><span class="en">RANKING</span><span class="jp">ランキング推移</span></h2>
+      <div class="ranking-controls">
+        <label for="seasonSelect">シーズン選択</label>
+        <select id="seasonSelect"></select>
+      </div>
+      <div class="ranking-cards" id="rankingCards"></div>
+      <div class="chart-wrap">
+        <svg id="rankingChart" viewBox="0 0 640 280" role="img" aria-labelledby="chartTitle chartDesc" preserveAspectRatio="xMidYMid meet">
+          <title id="chartTitle">賞金ランキング推移グラフ</title>
+          <desc id="chartDesc">選択したシーズンの試合ごとの賞金ランキング順位の推移を示す折れ線グラフ</desc>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOLE BY HOLE SCORES ============ -->
+  <section class="section" id="scores">
+    <div class="container">
+      <h2 class="section-title"><span class="en">SCORES</span><span class="jp">ホールバイホールスコア</span></h2>
+      <div class="score-legend">
+        <span class="legend-item"><i class="mark eagle"></i>イーグル以上</span>
+        <span class="legend-item"><i class="mark birdie"></i>バーディー</span>
+        <span class="legend-item"><i class="mark par"></i>パー</span>
+        <span class="legend-item"><i class="mark bogey"></i>ボギー</span>
+        <span class="legend-item"><i class="mark double"></i>ダブルボギー以上</span>
+      </div>
+      <div class="tournament-select-wrap">
+        <label for="tournamentSelect">大会選択</label>
+        <select id="tournamentSelect"></select>
+      </div>
+      <div id="scoreTableWrap" class="score-table-wrap"></div>
+      <div class="stat-cards" id="statCards"></div>
+    </div>
+  </section>
+
+  <!-- ============ SPONSORS ============ -->
+  <section class="section section-alt" id="sponsors">
+    <div class="container">
+      <h2 class="section-title"><span class="en">SPONSORS</span><span class="jp">スポンサー</span></h2>
+      <div class="sponsor-tier">
+        <h3 class="sponsor-tier-title">MAIN SPONSOR</h3>
+        <div class="sponsor-list" id="sponsorMain"></div>
+      </div>
+      <div class="sponsor-tier">
+        <h3 class="sponsor-tier-title">OFFICIAL SPONSOR</h3>
+        <div class="sponsor-list" id="sponsorOfficial"></div>
+      </div>
+      <div class="sponsor-tier">
+        <h3 class="sponsor-tier-title">SUPPORTING SPONSOR</h3>
+        <div class="sponsor-list" id="sponsorSupport"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AGENCY ============ -->
+  <section class="section" id="agency">
+    <div class="container agency-grid">
+      <div class="agency-text">
+        <h2 class="section-title small-title"><span class="en">AGENCY</span><span class="jp">所属先</span></h2>
+        <h3>株式会社TAKUMIスポーツマネジメント</h3>
+        <p>プロゴルファーのマネジメント、大会運営サポート、スポンサーシップ事業を手がけるスポーツマネジメント会社。選手のセカンドキャリア支援にも力を入れている。</p>
+        <dl class="agency-detail">
+          <dt>所在地</dt>
+          <dd>〒150-0001 東京都渋谷区神宮前1-2-3 TAKUMIビル5F</dd>
+          <dt>設立</dt>
+          <dd>2010年4月</dd>
+        </dl>
+        <a href="https://www.takumi-sports-management.example.jp/" class="btn btn-dark" target="_blank" rel="noopener noreferrer">公式サイトを見る</a>
+      </div>
+      <div class="agency-map" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ NEWS / SCHEDULE ============ -->
+  <section class="section section-alt" id="news">
+    <div class="container">
+      <h2 class="section-title"><span class="en">NEWS &amp; SCHEDULE</span><span class="jp">ニュース・スケジュール</span></h2>
+      <div class="news-schedule-grid">
+        <div>
+          <h3 class="sub-title">NEWS</h3>
+          <ul class="news-list" id="newsList"></ul>
+        </div>
+        <div>
+          <h3 class="sub-title">SCHEDULE</h3>
+          <ul class="schedule-list" id="scheduleList"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title"><span class="en">CONTACT</span><span class="jp">お問い合わせ</span></h2>
+      <p class="contact-lead">取材・スポンサーシップ・イベント出演等のお問い合わせは、以下のフォームよりご連絡ください。</p>
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="cf-name">お名前<span class="required">必須</span></label>
+          <input type="text" id="cf-name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="cf-company">会社名・団体名</label>
+          <input type="text" id="cf-company" name="company" autocomplete="organization">
+        </div>
+        <div class="form-row">
+          <label for="cf-email">メールアドレス<span class="required">必須</span></label>
+          <input type="email" id="cf-email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="cf-category">お問い合わせ種別<span class="required">必須</span></label>
+          <select id="cf-category" name="category" required>
+            <option value="">選択してください</option>
+            <option value="media">取材のご依頼</option>
+            <option value="sponsor">スポンサーシップのご相談</option>
+            <option value="event">イベント出演のご依頼</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="cf-message">お問い合わせ内容<span class="required">必須</span></label>
+          <textarea id="cf-message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark btn-submit">送信する</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-logo">R. SAKAMOTO</p>
+    <nav aria-label="フッターメニュー">
+      <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#ranking">Ranking</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="footer-copy">&copy; 2026 Ryuichi Sakamoto Official Site. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
